@@ -1,0 +1,33 @@
+{
+  "name": "map-limit-swc-vs-tsc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:tsc": "ts-node index.ts",
+    "start:swc": "swc index.ts --config-file .swcrc -o index.js --sync && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/if1live/map-limit-swc-vs-tsc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/if1live/map-limit-swc-vs-tsc/issues"
+  },
+  "homepage": "https://github.com/if1live/map-limit-swc-vs-tsc#readme",
+  "dependencies": {
+    "@swc-node/core": "^1.5.1",
+    "@swc/cli": "^0.1.46",
+    "@swc/core": "^1.2.61",
+    "@types/async": "^3.2.6",
+    "@types/delay": "^3.1.0",
+    "@types/node": "^15.12.4",
+    "async": "^3.2.0",
+    "delay": "^5.0.0",
+    "p-limit": "^3.1.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  }
+}
